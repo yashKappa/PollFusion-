@@ -1,0 +1,53 @@
+/* style.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: #333;
+    position: relative; /* Ensures that the image can be placed behind content */
+    text-align: center;
+  }
+  
+  .home-image {
+    position: absolute; /* Position image behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Increased the width beyond 100% of the container */
+    height: 100vh; /* Increased the height beyond 100% of the container */
+    object-fit:fill; /* Make the image cover the container without distortion */
+    z-index: -1; /* Keeps the image behind the content */
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff; 
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    color: #fff; 
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
+  
+  .home-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  
