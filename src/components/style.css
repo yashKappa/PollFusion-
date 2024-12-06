@@ -1,53 +1,150 @@
-/* style.css */
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    color: #333;
-    position: relative; /* Ensures that the image can be placed behind content */
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #333;
+  position: relative; /* Ensures that the image can be placed behind content */
+  text-align: center;
+}
+
+.home-image {
+  position: absolute; /* Position image behind the content */
+  top: 0;
+  left: 0;
+  width: 100%; /* Increased the width beyond 100% of the container */
+  height: 100vh; /* Increased the height beyond 100% of the container */
+  object-fit: cover; /* Make the image cover the container without distortion */
+  z-index: -1; /* Keeps the image behind the content */
+}
+
+.home-img {
+  display: none; /* Initially hide home-img */
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.home-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.home-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .home-container {
+    justify-content: flex-start; /* Adjust the content to top */
+    padding-top: 20px;
   }
-  
+
+  /* Hide the large background image on mobile */
   .home-image {
-    position: absolute; /* Position image behind the content */
+    display: none;
+  }
+
+  /* Show the mobile background image */
+  .home-img {
+    display: block;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Increased the width beyond 100% of the container */
-    height: 100vh; /* Increased the height beyond 100% of the container */
-    object-fit:fill; /* Make the image cover the container without distortion */
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensure the image fills the screen without distortion */
     z-index: -1; /* Keeps the image behind the content */
   }
-  
+
   .home-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #fff; 
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 2rem; /* Adjust font size for mobile */
   }
-  
+
   .home-description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    color: #fff; 
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 1rem; /* Adjust font size for mobile */
   }
-  
+
   .home-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    padding: 12px 24px; /* Increase padding for better touch experience */
+    font-size: 1.1rem; /* Adjust button font size for mobile */
+    text-decoration: none;
   }
-  
-  .home-button:hover {
-    background-color: #0056b3;
+}
+
+/* Desktop View (for larger screens) */
+@media (max-width: 600px) {
+  .home-container {
+    justify-content: center; /* Vertically center on mobile */
+    align-items: center; /* Horizontally center on mobile */
   }
-  
+
+  .home-image {
+    display: none; /* Hide default background image on mobile */
+  }
+
+  .home-img {
+    display: block; /* Show home-img on mobile */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover; /* Make the image fill the screen without distortion */
+    z-index: -1; /* Keep the image behind the content */
+    
+  }
+
+  .home-title {
+    font-size: 1.9rem; /* Adjust font size for mobile */
+    background-color: #00000025;
+    padding: 5px 5px;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    margin-top: -10rem;
+    text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000;
+  }
+
+  .home-description {
+    background-color: #00000025;
+    padding: 5px 5px;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    font-size: 1rem; /* Adjust font size for mobile */
+    text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  }
+
+  .home-button {
+    padding: 12px 24px; /* Increase padding for better touch experience */
+    font-size: 1.1rem; /* Adjust button font size for mobile */
+    text-decoration: none;
+  }
+}

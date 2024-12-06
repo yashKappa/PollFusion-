@@ -1,0 +1,102 @@
+/* Login.css */
+
+.login-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Adds space below the heading */
+    padding-bottom: 10px;
+    color: #333;
+  }
+  
+  .message {
+    font-size: 1.1rem;
+    color: green;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    border-radius: 5px;
+  }
+  
+  .login-form {
+    max-width: 450px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 1.1rem;
+    margin-bottom: 10px; /* Added margin for spacing between label and input */
+    display: block;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .input-group input {
+    padding: 12px 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #171718;
+    box-shadow: 0 0 8px rgba(51, 51, 51, 0.5);
+  }
+  
+  .submit-btn {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Adds margin between input fields and button */
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .login-container {
+      margin: 20px;      
+    }
+  
+    .login-form {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    .input-group input {
+      font-size: 1rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  

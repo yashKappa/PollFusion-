@@ -1,13 +1,17 @@
 import React from "react";
-import "./App.css"; // Import your app's main CSS (if you have one)
-import Home from "./components/Home"; // Import the Home component
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home"; // Home page
+import Login from "./components/Login"; // Login page
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home /> {/* Render the Home component */}
-    </div>
+    <Routes>
+      {/* Home Page */}
+      <Route path="/" element={<Home />} />
+      {/* Login Page */}
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
-}
+};
 
 export default App;
