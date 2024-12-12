@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PollFusion-/static/css/main.d2cf2eaa.css",
-    "main.js": "/PollFusion-/static/js/main.d83cfb8c.js",
+    "main.css": "/PollFusion-/static/css/main.77ba86d0.css",
+    "main.js": "/PollFusion-/static/js/main.08f64eab.js",
     "static/js/453.7349164c.chunk.js": "/PollFusion-/static/js/453.7349164c.chunk.js",
     "index.html": "/PollFusion-/index.html",
-    "main.d2cf2eaa.css.map": "/PollFusion-/static/css/main.d2cf2eaa.css.map",
-    "main.d83cfb8c.js.map": "/PollFusion-/static/js/main.d83cfb8c.js.map",
+    "main.77ba86d0.css.map": "/PollFusion-/static/css/main.77ba86d0.css.map",
+    "main.08f64eab.js.map": "/PollFusion-/static/js/main.08f64eab.js.map",
     "453.7349164c.chunk.js.map": "/PollFusion-/static/js/453.7349164c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2cf2eaa.css",
-    "static/js/main.d83cfb8c.js"
+    "static/css/main.77ba86d0.css",
+    "static/js/main.08f64eab.js"
   ]
 }
