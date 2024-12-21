@@ -10,7 +10,7 @@ const Home = () => {
         Manage elections, create polls, and analyze results seamlessly.
       </p>
       {/* Link instead of Button */}
-      <Link to="/login" className="home-button">
+      <Link to="/Creator" className="home-button">
         Get Started
       </Link>
       <img

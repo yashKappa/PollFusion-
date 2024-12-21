@@ -1,0 +1,178 @@
+/* General Styles */
+.session-container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: #333;
+  margin-top: -1rem;
+}
+
+.message {
+  position: fixed;
+  top: -50px; /* Start position above the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Ensure it stays in the center */
+  display: flex;
+  font-size: 1.1rem;
+  color: green;
+  padding: 10px 20px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  animation: slideIn 0.3s ease-out forwards; /* Add animation */
+}
+
+/* Define the animation */
+@keyframes slideIn {
+  0% {
+    top: -50px; /* Start position above the screen */
+    opacity: 0; /* Start with invisible */
+  }
+  100% {
+    top: 75px; /* End position at 20px from the top */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.delete-btn{
+  background-color: rgb(248, 27, 27);
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+/* Session Form Container */
+.session-form {
+  max-width: 450px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px; /* Better spacing between inputs */
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  color: #444;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.267);
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #007BFF;
+  color: #FFF;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px; /* Adds margin between input fields and button */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-warning img{
+  width: 50%;
+}
+
+.user-info {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.user-info p {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.user-info strong {
+  color: #000;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .session-container {
+      margin: 20px;
+  }
+
+  .session-form {
+      width: 100%; /* Full width for smaller screens */
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 1.6rem;
+  }
+
+  .input-group input {
+      font-size: 1rem;
+  }
+
+  .submit-btn {
+      font-size: 1rem;
+  }
+
+  .login-warning img{
+    width: 100%;
+  }
+}
+
+.back-button{
+  padding: 5px 10px;
+  margin: 1rem;
+  background-color: #2586ee;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.back-button:hover{
+  background-color: #025ec2;
+}
